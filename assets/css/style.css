@@ -1,0 +1,706 @@
+/* ================================================
+	Template Name: Rony Personal Portfolio
+	Template URI: http://rony.visualworkstation.com
+	Description: Personal Portfolio HTML5 Template
+	Author: "Rony Jackson"
+	Author URI: www.facebook.com/ronybarua.cmt
+	Version: 1.0
+	===================================================
+	
+	##CSS TABLE OF CONTENT
+	--------------------------------
+	1. THEME BASIC CSS
+	2. GLOBAL DESIGN
+	3. HEADER DESIGN
+	4. SLIDER DESIGN
+	5. STORY ABOUT US
+	6. AMAZING-SERVICE
+	7. UNIQUE-DESIGN
+	8. WHAT WE DO
+	9. TESTIMONIAL
+	10.MEET-OUR-TEAM
+	11.CLIENTS-LOGO
+	12.TESTIMONIAL-EXTRA
+	13.SOME OF OUR WORK
+	14.WHAT PEOPLE SAY
+	15.BLOG SECTION
+	16.MAP
+	17.FOOTER
+================================================ */
+
+/*1. theme basic css start>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>*/
+*{
+	
+	padding: 0;
+}
+html,body{
+	height:100%;
+	width:100%;
+}
+body{
+	
+	background-color:#fff;
+	font-family: 'Righteous', cursive;
+	font-size: 14px;
+	font-weight: normal;
+	line-height: 20px;
+	text-align: center;
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    font-style: normal;
+    font-weight: 600;
+    margin-top: 0;
+    margin-bottom: 20px;
+    line-height: 1.2;
+	letter-spacing:2px;
+}
+h1 {
+    font-size: 80px;
+	margin-bottom: 0px;
+}
+
+h2 {
+    font-size: 38px;
+	font-family: 'Raleway', sans-serif;
+}
+
+h3 {
+    font-size: 36px;
+	color:#333 !important;
+}
+
+h4 {
+    font-size: 24px;
+	
+}
+
+h5 {
+    font-size: 18px;
+}
+
+h6 {
+    font-size: 14px;
+}
+header{
+	position:absolute;
+	top:0;
+	left:0;
+	width:100%;
+	
+}
+a{
+	
+	
+	
+	-webkit-transition:all 0.3s ease-in-out;
+	-moz-transition:all 0.3s ease-in-out;
+	-o-transition:all 0.3s ease-in-out;
+	transition:all 0.3s ease-in-out;
+	text-decoration: none;
+	display:block;
+	text-transform: uppercase;
+}
+a:hover,
+a:focus,
+a:active{ 
+	color:#F7CB88;
+	text-decoration: none; 
+	outline:none;
+	
+}
+ul,li{
+	
+	list-style:none;
+}
+p {
+	
+    font-size: 17px;
+    font-weight: 400;
+    line-height: 24px;
+	font-family: 'Raleway', sans-serif;
+	margin-top: 10px;
+}
+
+span{
+	
+	color:#fff;
+	font-size:60px;
+}
+strong{
+	font-weight: normal;
+	font-size:30px;
+	color:#333;
+	margin-top:15px;
+	
+}
+b{
+	font-size:17px;
+}
+hr {
+    border-color: #333 !important;
+    border-width: 3px !important;
+    max-width: 50px !important;
+	margin-top: 15px;
+    margin-bottom: 15px;
+	
+}
+.global hr{
+	margin:0;
+}
+.bg{
+	background-color:rgba(255,255,255,0.6);
+	z-index:1;
+	width:100%;
+	height:100%;
+}
+.bg2{
+	background-color:rgba(0,0,0,0.6);
+	z-index:1;
+	width:100%;
+	height:100%;
+}
+
+/*1. theme basic css end>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>*/
+
+/*--------------------------------------------------------------------------------------------*/
+
+/*1. global design start>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>*/
+.global-margin{
+	margin-top:40px;
+	padding-top:60px;
+}
+.global-margin2{
+	margin-top:100px;
+	margin-bottom:100px;
+	
+}
+.global-padding{
+	
+	padding-top:100px;
+	}
+.global-padding-Extra{
+	
+	padding-top:100px;
+	padding-bottom:100px;
+}
+.heading-margin{
+	
+    margin-bottom:24px;	
+}
+.logo-title{
+	color:#fff;
+	font-size:40px;
+}
+.owl-nav div{
+	
+	
+	font-size:30px;
+	line-height:40px;
+	position:absolute;
+	height:40px;
+	top:50%;
+	left:0px;
+	width:40px;
+	padding:5px;
+	text-align: center;
+	transform:translateY(-50%);
+	visibility:hidden;
+	
+}
+.owl-nav div.owl-next{
+	
+	left:auto;
+	right:0px;
+}
+.owl-nav{	
+	color: #fff;
+}
+.navbar{
+	margin-bottom:0px !important;
+}
+.type{
+	color:#fff;
+	font-size:48px;
+}
+/* #particles-js {
+	height: 100vh;
+	overflow: hidden;
+	position: absolute;
+	top: 0;
+	width: 100%;
+	z-index: 1;
+} */
+/*1. global design end>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>*/
+
+/*--------------------------------------------------------------------------------------------*/
+
+/*2. web page-loader design start>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>*/
+.page-loader{
+	position:absolute;
+	top:0;
+	bottom:0;
+	left:0;
+	right:0;
+	background-color:rgb(0,0,0);
+	z-index:2;
+}
+.load-spinner{
+	width:50px;
+	height:50px;
+	border:5px solid #fff;
+	border-radius:100%;
+	margin:50vh auto 0;
+	transform:translateY(-50%);
+	position: relative;
+}
+.load-spinner:after{
+	content:"";
+	position:absolute;
+	top:-5px;
+	left:-5px;
+	width:50px;
+	height:50px;
+	border-radius:100%;
+	border:5px solid transparent;
+	border-top:5px solid #9C012D;
+	transform:rotate(45deg);
+	animation:wheel 1s ease-in-out infinite;
+}
+@-webkit-keyframes wheel {
+	from { transform:rotate(45deg); }
+	to { transform:rotate(405deg); }
+}
+@-o-keyframes wheel {
+	from { transform:rotate(45deg); }
+	to { transform:rotate(405deg); }
+}
+@-moz-keyframes wheel {
+	from { transform:rotate(45deg); }
+	to { transform:rotate(405deg); }
+}
+@keyframes wheel {
+	from { transform:rotate(45deg); }
+	to { transform:rotate(405deg); }
+}
+/*2. web page-loader design end>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>*/
+
+/*--------------------------------------------------------------------------------------------*/
+
+/*2.slider and header design start>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>*/
+.single-slider{
+	
+    background-size: cover;
+    height: 100vh;
+    background-position: 50% 50%;
+    background-repeat: no-repeat;
+}
+.slider-title{
+    width:auto;
+    height:100%;
+	display:table;
+	margin:0 10%;
+}
+.slider-title h1,h2{
+    color:#fff;
+}
+.table-cell{
+	
+	display:table-cell;
+	vertical-align: middle;
+}
+.single-slider i{
+	
+	padding:12px 35px;
+	background:#fff;
+	color:#000;
+}
+.single-slider i:hover{
+	background:#000;
+	color:#fff;
+	-webkit-transition:all 0.3s ease-in-out;
+}
+.single-slider a{
+	
+	margin-top:25px;
+}
+
+.navbar-inverse {
+    background-color:rgba(0,0,0,0.6) !important;
+    border-color: transparent !important;
+}
+.navbar-inverse .navbar-nav>.active>a {
+    color: #fff;
+	background-color: transparent !important; 
+}
+
+.scroll-icon {
+	bottom: 20px;
+	display: inline-block;
+	position: absolute;
+	text-align: center;
+	z-index: 1;
+}
+.scroll-icon a {
+	color: #fff;
+	font-size: 20px;
+}
+/*2.Navbar hover effet>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>*/
+ul li a:before{
+	content:'';
+	position:absolute;
+	width:0px;
+	height:3px;
+	top:80%;
+	left:0;
+	background:#fff;
+	transition:0.3s;
+}
+ul li a:after{
+	content:'';
+	position:absolute;
+	width:0px;
+	height:3px;
+	top:80%;
+	right:0;
+	background:#fff;
+	transition:0.3s;
+}
+
+ul li:hover a:before{
+	width:50%;
+	transform:translateX(50%);
+	
+}
+ul li:hover a:after{
+	
+	width:50%;
+	transform:translateX(-50%);
+}
+img{
+	width:100%;
+	height:100%;
+}
+/*2.slider and header design end>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>*/
+/*--------------------------------------------------------------------------------------------*/
+/*2.personal-info design start>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>*/
+.Biodata .col-md-8{
+	
+	margin-bottom: 50px;
+}
+.Biodata img{
+	
+	width: 240px !important;
+    height: 240px;
+    border-radius: 50%;
+    border: 5px solid #eee;
+    background: #fff;
+    padding: 5px;
+    margin: 0 auto;
+    box-shadow: 0px 0px 25px 0px rgba(0,0,0,0.3);
+}
+.info{
+	margin-top: 20px;
+}
+.personal-info i{
+	padding:13px 25px;
+	border:2px solid  #333;
+	color:#333;
+	position:relative;
+}
+.personal-info i:before{
+	position:absolute;
+	content:"";
+	top:0;
+	left:0;
+	width:100%;
+	height:100%;
+	background-color:#333;
+	overflow:hidden;
+	z-index:-1;
+	transform:scaleX(0);
+	transform-origin:left;
+	transition:transform 0.5s;
+	
+}
+.personal-info i:hover:before{
+	transform:scaleX(1);
+	color:#fff;
+}
+.personal-info i:hover{
+	color:#fff;
+}
+.resume{
+	
+	margin-top: 25px;
+}
+/*2.personal-info design end>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>*/
+/*--------------------------------------------------------------------------------------------*/
+/*2.skillbar design start>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>*/
+
+.skillbar-overlay{
+	height:100%;
+	width:0;
+	position:relative;
+	background-color: #333333;
+	border-radius:20px;
+	-webkit-transition:width 3000ms linear;
+	-moz-transition:width 3000ms linear;
+	transition:width 3000ms linear;
+	
+}
+.skillbar-overlay:after{
+	
+	position:absolute;
+	right:2.5%;
+	content:attr(data-percent);
+	line-height: 20px;
+	color:#fff;
+}
+.skillbar {
+	margin-bottom:20px;
+	width:100%;
+	background:#f2f2f1;
+	height:20px;
+	border-radius:20px;
+}
+.skillbar-animation{
+	
+	margin-top: 20px;
+}
+
+/*2.skillbar design end>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>*/
+/*--------------------------------------------------------------------------------------------*/
+/*2.portfolio section design start>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>*/
+.grid .col-md-3{
+	border:1px solid #000;
+	
+}
+.button-group button{
+	
+	padding:10px;
+	border:none;
+	color:#333;
+	background:transparent;
+	
+}
+.button-group{
+	margin-bottom: 20px;
+}
+.grid .col-md-4{
+	
+	padding:0px;
+}
+.image-overlay{
+	position:absolute;
+	width:0;
+	height:100%;
+	top:0;
+	background-color:rgba(51,51,51,0.8);
+	text-align: center;
+	color: #fff;
+	justify-content:center;
+	align-items:center;
+	display:flex;
+	overflow:hidden;
+	transition:0.5s ease;
+}
+.single-portfolio-item{
+	position:relative;
+}
+.single-portfolio-item:hover .image-overlay{
+	width:100%;
+}
+
+.details a{
+	
+	display:inline-block;
+	font-size:25px;
+	padding:5px;
+	color:#fff;
+	
+}
+/*2.portfolio section design end>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>*/
+/*--------------------------------------------------------------------------------------------*/
+/*2.Services design start>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>*/
+.service-item i{
+	font-size:40px;
+	margin-bottom: 20px;
+	color:#580A20;
+}
+.service-item p{
+	text-align: justify;
+}
+.service-item {
+	padding:15px;
+	background-color:#F9F7F7;
+}
+.service-item:hover i {
+	transform:rotate(350deg);
+	transition:all 0.5s;
+}
+.service-item:hover  {
+	box-shadow:10px 10px 20px rgba(0,0,0,0.3);
+	-webkit-transition: all 0.5s ease-in-out 0s;
+    transition: all 0.3s ease-in-out 0s;
+}
+.single-service-item{
+	margin-top: 50px;
+	text-align: center;
+}
+.single-service-item .service-margin{
+	padding-bottom:30px;
+}
+/*2.Services design end>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>*/
+/*--------------------------------------------------------------------------------------------*/
+/*2.Testimonial design start>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>*/
+.single-testimonial img{
+	
+	width: 150px !important;
+    height:150px;
+    border-radius: 50%;
+    border: 2px solid #eee;
+    padding: 5px;
+    margin: 10px auto;
+    box-shadow: 0px 0px 25px 0px rgba(0,0,0,0.3);
+}
+.feedback{
+	margin-top: 30px;
+	margin-bottom: 20px;
+	text-align: center;
+}
+.feedback i{
+	margin-left:10px;
+	margin-right:10px;
+}
+.Testimonial{
+	background-color:#F9F7F7;
+}
+.Testimonial .owl-dots {
+    position: absolute;
+    text-align: center;
+    left: 0;
+    right: 0;
+}
+.Testimonial .owl-dot {
+    height: 12px;
+    width: 12px;
+    margin: 0 5px;
+    border-radius: 50%;
+    background: #333;
+    display: inline-block;
+}
+.Testimonial .owl-dot.active {
+    background: #FCC33F;
+}
+/*2.Testimonial design end>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>*/
+/*--------------------------------------------------------------------------------------------*/
+/*2.Contact design start>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>*/
+.Contact{
+	background-size: cover;
+    background-position: 50% 50%;
+    background-repeat: no-repeat;
+}
+.contact-form input,
+.contact-form textarea
+{
+	padding:25px;
+	background:transparent;
+	border-bottom:1px solid #fff !important;
+	border:none;
+	box-shadow:none;
+	color:#fff;
+	
+}
+
+.contact-form {
+	margin-top:50px;
+	color:#fff;
+	
+}
+.contact-form .col-md-6 {
+	border:1px solid #ffff;
+	padding-top:50px;
+	padding-bottom:50px;
+}
+.contact-form .col-md-6:hover {
+	box-shadow:20px 20px 15px rgba(0,0,0,0.4);
+	webkit-transition:all ease 0.35s;
+	transition:0.5s;
+}
+.contact-form .btn-default{
+	padding:12px 25px;
+	border:1px solid #fff;
+	background:transparent;
+	
+}
+.contact-form .btn-default:hover{
+	background:#333;
+	color:#fff;
+	webkit-transition: all ease 0.3s;
+	transition:0.5s;
+	
+}
+/*2.Contact design end>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>*/
+/*--------------------------------------------------------------------------------------------*/
+/*2.Footer design start>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>*/
+.Footer-zone{
+	background:#333;
+	color:#fff;
+	padding:50px 0px;
+	
+	
+}
+.social-icons i{
+	display:inline;
+	padding:10px;
+	color:#fff;
+	font-size:20px;
+	border:1px solid #fff;
+	
+}
+.social-icons a{
+	display:inline-block;
+	margin-bottom:12px;
+}
+.social-icons i:hover{
+	background-color:#fff;
+	color:#333;
+	webkit-transition:all ease 0.3s;
+	transition:0.3s;
+	
+	
+}
+
+.social-icons{
+	margin-top: 30px;
+	margin-bottom: 10px;
+}
+.footer-title{
+	margin-bottom: 20px;
+}
+
+/* ScrollToTop plugins design start*/
+#ScrollToTop{
+	
+	font-size:3em;
+	color:#333;
+	position:fixed;
+	right:1%;
+	bottom:5%;
+	transition:all 0.5s ease;
+	z-index:1;
+}
+
+#ScrollToTop:hover{
+	transform:scale(1.1,1.1);
+	transition:all 0.5s ease;
+}
+.disappear{
+	transform:scale(0.0,0.0);
+}
+/* ScrollToTop plugins design end*/

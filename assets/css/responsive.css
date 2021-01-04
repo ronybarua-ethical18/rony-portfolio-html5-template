@@ -1,0 +1,48 @@
+/* Navbar background changing code */
+@media only screen and (max-width: 768px) {
+	.navbar-collapse{
+		background-color:rgba(0,0,0,0.6) !important;
+	}
+	.my-skill {
+		margin-top: 50px;
+		}
+}
+
+/*		Mobile Layout: 320px.
+	Gutters: 24px.
+	Outer margins: 34px.
+	Inherits styles from: Default Layout.
+	---------------------------------------------
+	cols    1     2      3
+px      68    160    252    */
+
+@media only screen and (max-width: 767px) {
+
+.slider-title h1{
+    
+	font-size:45px;
+}
+.slider-title h2{
+    
+	font-size:30px;
+}
+}
+
+/*	Wide Mobile Layout: 480px.
+	Gutters: 24px.
+	Outer margins: 22px.
+	Inherits styles from: Default Layout, Mobile Layout.
+	------------------------------------------------------------
+	cols    1     2      3      4      5
+px      68    160    252    344    436    */
+
+@media only screen and (min-width: 480px) and (max-width: 767px) {
+	
+
+	
+.slider-title h2{
+    
+	font-size:25px;
+}
+	
+}
